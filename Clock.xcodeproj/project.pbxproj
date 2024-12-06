@@ -14,6 +14,7 @@
 		231516ED2D0387B600FFDC27 /* WorldClockView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 231516EC2D0387B600FFDC27 /* WorldClockView.swift */; };
 		231516EF2D0387C800FFDC27 /* AlarmsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 231516EE2D0387C800FFDC27 /* AlarmsView.swift */; };
 		231516F12D0387D600FFDC27 /* StopwatchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 231516F02D0387D600FFDC27 /* StopwatchView.swift */; };
+		231516F32D038FE400FFDC27 /* CityView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 231516F22D038FE400FFDC27 /* CityView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +26,7 @@
 		231516EC2D0387B600FFDC27 /* WorldClockView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorldClockView.swift; sourceTree = "<group>"; };
 		231516EE2D0387C800FFDC27 /* AlarmsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlarmsView.swift; sourceTree = "<group>"; };
 		231516F02D0387D600FFDC27 /* StopwatchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StopwatchView.swift; sourceTree = "<group>"; };
+		231516F22D038FE400FFDC27 /* CityView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +80,7 @@
 			children = (
 				231516E52D0386CD00FFDC27 /* LandingView.swift */,
 				231516EC2D0387B600FFDC27 /* WorldClockView.swift */,
+				231516F22D038FE400FFDC27 /* CityView.swift */,
 				231516EE2D0387C800FFDC27 /* AlarmsView.swift */,
 				231516F02D0387D600FFDC27 /* StopwatchView.swift */,
 			);
@@ -158,6 +161,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				231516F12D0387D600FFDC27 /* StopwatchView.swift in Sources */,
+				231516F32D038FE400FFDC27 /* CityView.swift in Sources */,
 				231516E72D0386CD00FFDC27 /* ClockApp.swift in Sources */,
 				231516ED2D0387B600FFDC27 /* WorldClockView.swift in Sources */,
 				231516EF2D0387C800FFDC27 /* AlarmsView.swift in Sources */,
