@@ -24,20 +24,21 @@ struct CityView: View {
                 Text("Today, \(timeZoneOffset)HRS")
                     .foregroundStyle(Color.gray)
                 Text(city)
-                    .font(.system(.largeTitle, design: .default, weight: .thin))
+                    .font(.system(.title, design: .default, weight: .thin))
             }
             Spacer()
             
             //Right side
             Text(time)
-                .font(.system(size: 64.0, weight: .thin, design: .default))
+                .font(.system(size: 60.0, weight: .thin, design: .default))
             Text(amOrPm)
-                .font(.system(.largeTitle, design: .default, weight: .thin))
+                .font(.system(.title, design: .default, weight: .thin))
         }
+        .padding(.vertical, 5)
     }
 }
 
 #Preview {
-    CityView(timeZoneOffset: "-9", city: "Mexico City", time: "3:30", amOrPm: "AM")
+    WorldClockView()
 }
 

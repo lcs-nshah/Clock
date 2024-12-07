@@ -42,6 +42,7 @@ struct WorldClockView: View {
                     
                 }
             }
+            .padding(10)
         }
     }
 }

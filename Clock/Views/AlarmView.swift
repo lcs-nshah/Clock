@@ -36,9 +36,9 @@ struct AlarmView: View {
                 .tint(.green)
             
         }
-        .padding()
+        .padding(.horizontal)
     }
 }
 #Preview {
-    AlarmView(time: "7:30", amOrPM: "AM")
+    AlarmsView()
 }
