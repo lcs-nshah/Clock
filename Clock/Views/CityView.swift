@@ -16,13 +16,13 @@ struct CityView: View {
     let time: String
     let amOrPm: String
     
-    
     //MARK: Computed Property
     var body: some View {
-        HStack {
+        HStack (alignment: .bottom) {
             //Left side
-            VStack {
+            VStack (alignment: .leading){
                 Text("Today, \(timeZoneOffset)HRS")
+                    .foregroundStyle(Color.gray)
                 Text(city)
                     .font(.system(.largeTitle, design: .default, weight: .thin))
             }
@@ -33,8 +33,11 @@ struct CityView: View {
                 .font(.system(size: 64.0, weight: .thin, design: .default))
             Text(amOrPm)
                 .font(.system(.largeTitle, design: .default, weight: .thin))
-            
-            
         }
     }
 }
+
+#Preview {
+    CityView(timeZoneOffset: "-9", city: "Mexico City", time: "3:30", amOrPm: "AM")
+}
+
