@@ -11,26 +11,11 @@ struct AlarmsView: View {
     var body: some View {
         NavigationStack {
             VStack {
-                HStack {
-                    VStack (alignment: .leading){
-                        HStack {
-                            //Left side
-                            Text("7:30")
-                                .font(.system(size: 64.0, weight: .thin, design: .default))
-                            Text("AM")
-                                .font(.system(.largeTitle, design: .default, weight: .thin))
-                        }
-                        Text("Alarm")
-                    }
-                    
-                    Spacer()
-                    
-                    //Right side
-                    Toggle("", isOn: Binding.constant(true))
-                        .tint(.green)
-                    
-                }
-                .padding()
+                AlarmView(time: "7:30", amOrPM: "AM")
+                AlarmView(time: "8:15", amOrPM: "AM")
+                AlarmView(time: "9:00", amOrPM: "AM")
+                AlarmView(time: "9:15", amOrPM: "AM")
+
             }
             .navigationTitle("Alarms")
             .toolbar {
@@ -57,3 +42,5 @@ struct AlarmsView: View {
     #Preview {
         LandingView()
     }
+
+
