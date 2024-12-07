@@ -36,7 +36,6 @@ struct AlarmView: View {
                 .tint(.green)
             
         }
-        .padding(.horizontal)
     }
 }
 #Preview {
