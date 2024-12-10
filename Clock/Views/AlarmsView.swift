@@ -11,14 +11,13 @@ struct AlarmsView: View {
     var body: some View {
         NavigationStack {
             VStack (alignment: .leading) {
+                //Sleep schedule
                 Group {
                     Text(Image(systemName: "bed.double.fill"))
                     + Text(" Sleep | Wake Up").font(.system(.title3, design: .default, weight: .bold))
                 }
                 .padding(.horizontal)
                 List {
-                    //Sleep schedule
-                   
                     HStack {
                         //Left side
                         Text("No Alarm")
@@ -29,12 +28,13 @@ struct AlarmsView: View {
                         //Right side
                         Button {} label: {
                             Text("SET UP")
-                                .padding(EdgeInsets(top: 5, leading: 5, bottom: 5, trailing: 5))
+                                .padding(EdgeInsets(top: 5, leading: 8, bottom: 5, trailing: 8))
                                 .foregroundStyle(.orange)
-                                .background(Color.gray, in: Capsule())
+                                .background(Color(hue: 1, saturation: 0, brightness: 0.2), in: Capsule())
                         }
-                        
                     }
+                    
+                    //Alarms
                     Text("Other")
                         .font(.system(.title2, design: .default, weight: .bold))
                     
@@ -60,7 +60,6 @@ struct AlarmsView: View {
                     } label: {
                         Image(systemName: "plus")
                     }
-                    
                 }
             }
         }

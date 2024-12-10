@@ -34,7 +34,6 @@ struct AlarmView: View {
             Toggle("", isOn: Binding.constant(true))
                 .frame(width: 75)
                 .tint(.green)
-            
         }
     }
 }
