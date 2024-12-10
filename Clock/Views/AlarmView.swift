@@ -37,6 +37,7 @@ struct AlarmView: View {
         }
     }
 }
+
 #Preview {
     AlarmsView()
 }

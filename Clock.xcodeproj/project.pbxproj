@@ -16,6 +16,7 @@
 		231516F12D0387D600FFDC27 /* StopwatchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 231516F02D0387D600FFDC27 /* StopwatchView.swift */; };
 		231516F32D038FE400FFDC27 /* CityView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 231516F22D038FE400FFDC27 /* CityView.swift */; };
 		231516F52D04A7F100FFDC27 /* AlarmView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 231516F42D04A7F100FFDC27 /* AlarmView.swift */; };
+		231516F72D07EA7D00FFDC27 /* LapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 231516F62D07EA7D00FFDC27 /* LapView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +30,7 @@
 		231516F02D0387D600FFDC27 /* StopwatchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StopwatchView.swift; sourceTree = "<group>"; };
 		231516F22D038FE400FFDC27 /* CityView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityView.swift; sourceTree = "<group>"; };
 		231516F42D04A7F100FFDC27 /* AlarmView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlarmView.swift; sourceTree = "<group>"; };
+		231516F62D07EA7D00FFDC27 /* LapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LapView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +88,7 @@
 				231516EE2D0387C800FFDC27 /* AlarmsView.swift */,
 				231516F42D04A7F100FFDC27 /* AlarmView.swift */,
 				231516F02D0387D600FFDC27 /* StopwatchView.swift */,
+				231516F62D07EA7D00FFDC27 /* LapView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -163,6 +166,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				231516F72D07EA7D00FFDC27 /* LapView.swift in Sources */,
 				231516F12D0387D600FFDC27 /* StopwatchView.swift in Sources */,
 				231516F32D038FE400FFDC27 /* CityView.swift in Sources */,
 				231516E72D0386CD00FFDC27 /* ClockApp.swift in Sources */,

@@ -13,11 +13,11 @@ struct StopwatchView: View {
             //Main stopwatch time
             Text("00:16.68")
                 .font(.system(size: 90.0, weight: .thin, design: .default))
+                .padding(.vertical, 120)
             
-            Spacer()
             //Start and reset buttons
-            HStack (alignment: .center) {
-                //Left side
+            HStack {
+                //Reset
                 Button {} label: {
                     Text("Reset")
                         .padding(EdgeInsets(top: 35, leading: 35, bottom: 35, trailing: 35))
@@ -25,7 +25,7 @@ struct StopwatchView: View {
                         .background(Color(hue: 1, saturation: 0, brightness: 0.2), in: Circle())
                 }
                 
-                //Middle
+                //Carousel
                 Spacer()
                 
                 Circle()
@@ -38,7 +38,7 @@ struct StopwatchView: View {
                 
                 Spacer()
                 
-                //Right side
+                //Start
                 Button {} label: {
                     Text("Start")
                         .padding(EdgeInsets(top: 35, leading: 35, bottom: 35, trailing: 35))
@@ -46,6 +46,18 @@ struct StopwatchView: View {
                         .background(Color(hue: 0.3, saturation: 1.0, brightness: 0.17), in: Circle())
                 }
             }
+            
+            //Lap times
+            List {
+                LapView(lapNumber: 5, lapTime: "00:02.27")
+                LapView(lapNumber: 4, lapTime: "00:02.61")
+                LapView(lapNumber: 3, lapTime: "00:02.59")
+                    .foregroundStyle(.green)
+                LapView(lapNumber: 2, lapTime: "00:03.68")
+                LapView(lapNumber: 1, lapTime: "00:05.52")
+                    .foregroundStyle(.red)
+            }
+            .listStyle(.plain)
         }
     }
 }
@@ -53,3 +65,5 @@ struct StopwatchView: View {
 #Preview {
     LandingView()
 }
+
+
