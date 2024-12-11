@@ -10,20 +10,21 @@ import SwiftUI
 struct WorldClockView: View {
     var body: some View {
         NavigationStack {
-            VStack{
+            List {
                 //Ottawa
-                CityView(timeZoneOffset: "+0", city: "Ottawa", time: "6:35", amOrPm: "AM")
+                CityView(providedCity: ottawa)
                 //Vancouver
-                CityView(timeZoneOffset: "-3", city: "Vancouver", time: "3:35", amOrPm: "AM")
+                CityView(providedCity: vancouver)
                 //Hamburg
-                CityView(timeZoneOffset: "+6", city: "Hamburg", time: "12:35", amOrPm: "PM")
+                CityView(providedCity: hamburg)
                 //Sydney
-                CityView(timeZoneOffset: "+16", city: "Sydney", time: "10:35", amOrPm: "PM")
+                CityView(providedCity: sydney)
                 //Dubai
-                CityView(timeZoneOffset: "+9", city: "Dubai", time: "3:35", amOrPm: "PM")
+                CityView(providedCity: dubai)
                 //Mexico City
-                CityView(timeZoneOffset: "-1", city: "Mexico City", time: "5:35", amOrPm: "AM")
+                CityView(providedCity: mexicoCity)
             }
+            .listStyle(.plain)
             .navigationTitle("World Clock")
             .toolbar {
                 

@@ -10,28 +10,25 @@ import SwiftUI
 
 struct CityView: View {
     
-    //MARK: Stored Properties
-    let timeZoneOffset: String
-    let city: String
-    let time: String
-    let amOrPm: String
+    //MARK: Stored Property
+    let providedCity: City
     
     //MARK: Computed Property
     var body: some View {
         HStack (alignment: .bottom) {
             //Left side
             VStack (alignment: .leading){
-                Text("Today, \(timeZoneOffset)HRS")
+                Text("Today, \(providedCity.timeZoneOffset)HRS")
                     .foregroundStyle(Color.gray)
-                Text(city)
+                Text(providedCity.city)
                     .font(.system(.title, design: .default, weight: .thin))
             }
             Spacer()
             
             //Right side
-            Text(time)
+            Text(providedCity.time)
                 .font(.system(size: 60.0, weight: .thin, design: .default))
-            Text(amOrPm)
+            Text(providedCity.amOrPm)
                 .font(.system(.title, design: .default, weight: .thin))
         }
         .padding(.vertical, 5)

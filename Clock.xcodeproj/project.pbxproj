@@ -17,6 +17,7 @@
 		231516F32D038FE400FFDC27 /* CityView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 231516F22D038FE400FFDC27 /* CityView.swift */; };
 		231516F52D04A7F100FFDC27 /* AlarmView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 231516F42D04A7F100FFDC27 /* AlarmView.swift */; };
 		231516F72D07EA7D00FFDC27 /* LapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 231516F62D07EA7D00FFDC27 /* LapView.swift */; };
+		2315170E2D09486B00FFDC27 /* City.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2315170D2D09486700FFDC27 /* City.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +32,7 @@
 		231516F22D038FE400FFDC27 /* CityView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityView.swift; sourceTree = "<group>"; };
 		231516F42D04A7F100FFDC27 /* AlarmView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlarmView.swift; sourceTree = "<group>"; };
 		231516F62D07EA7D00FFDC27 /* LapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LapView.swift; sourceTree = "<group>"; };
+		2315170D2D09486700FFDC27 /* City.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = City.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +74,7 @@
 			isa = PBXGroup;
 			children = (
 				231516E42D0386CD00FFDC27 /* ClockApp.swift */,
+				2315170C2D09484D00FFDC27 /* Model */,
 				231516EB2D0386E500FFDC27 /* Views */,
 				231516E22D0386CD00FFDC27 /* Preview Content */,
 				231516E32D0386CD00FFDC27 /* Assets.xcassets */,
@@ -91,6 +94,14 @@
 				231516F62D07EA7D00FFDC27 /* LapView.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		2315170C2D09484D00FFDC27 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				2315170D2D09486700FFDC27 /* City.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -169,6 +180,7 @@
 				231516F72D07EA7D00FFDC27 /* LapView.swift in Sources */,
 				231516F12D0387D600FFDC27 /* StopwatchView.swift in Sources */,
 				231516F32D038FE400FFDC27 /* CityView.swift in Sources */,
+				2315170E2D09486B00FFDC27 /* City.swift in Sources */,
 				231516E72D0386CD00FFDC27 /* ClockApp.swift in Sources */,
 				231516ED2D0387B600FFDC27 /* WorldClockView.swift in Sources */,
 				231516EF2D0387C800FFDC27 /* AlarmsView.swift in Sources */,
